@@ -11,9 +11,9 @@ function TestimonialSection() {
           height="315"
           src="https://www.youtube.com/embed/1WpqQfmzBGY"
           title="YouTube video player"
-          frameborder="0"
+          frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
+          allowFullScreen
           aria-label="Client testimonial video"></iframe>
       </div>
       {/* Placeholder for text testimonials */}

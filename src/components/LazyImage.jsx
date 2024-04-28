@@ -14,7 +14,7 @@ const LazyImage = ({ src, alt, ...props }) => {
     );
   } catch (error) {
     console.error("Failed to load image with src: " + src + ". Error: ", error);
-    return null;
+    return <p>Error loading image.</p>;
   }
 };
 

@@ -3,20 +3,16 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const SomeComponent = () => {
-  try {
-    return (
-      <div>
-        <LazyLoadImage 
-          src="./src/assets/image.webp" // INPUT_REQUIRED {path_to_your_image}
-          alt="Descriptive alt text"
-          effect="blur"
-        />
-      </div>
-    );
-  } catch (error) {
-    console.error("Failed to load SomeComponent:", error.message, error.stack);
-    return <div>Error loading component</div>;
-  }
+  return (
+    <div>
+      {/* Example usage with a specific image and alt text */}
+      <LazyLoadImage
+        src="./assets/ai-workplace-integration.webp"
+        alt="AI solutions for workplace integration"
+        effect="blur"
+      />
+    </div>
+  );
 };
 
 export default SomeComponent;

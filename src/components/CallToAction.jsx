@@ -1,14 +1,10 @@
 import React from 'react';
 
 function CallToAction() {
-  // Error handling for the button click event
+  // Simplified button click event handler
   const handleClick = () => {
-    try {
-      console.log('Call to Action button clicked');
-      // Implement the click event logic here, such as form submission or navigation
-    } catch (error) {
-      console.error('Error occurred in CallToAction handleClick:', error.message, error.stack);
-    }
+    console.log('Call to Action button clicked');
+    // Implement the simple click event logic here, such as form submission or navigation
   };
 
   return (

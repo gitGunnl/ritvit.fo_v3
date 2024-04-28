@@ -5,9 +5,12 @@ import { VitePWA } from 'vite-plugin-pwa'
 // https://vitejs.dev/config/
 export default defineConfig({
   base: '/ritvit.fo_v3/', // Correctly set for deployment on GitHub Pages for the 'ritvit.fo_v3' project
-  plugins: [react(), VitePWA()],
+  plugins: [
+    react(), 
+    VitePWA()
+  ],
   resolve: {
-    extensions: ['.mjs', '.js', '.ts', '.jsx', '.tsx', '.json'] // Added .jsx to ensure JSX files are recognized
+    extensions: ['.mjs', '.js', '.ts', '.jsx', '.tsx', '.json']
   },
   build: {
     rollupOptions: {
