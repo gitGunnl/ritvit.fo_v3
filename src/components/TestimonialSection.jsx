@@ -2,14 +2,19 @@ import React from 'react';
 
 function TestimonialSection() {
   return (
-    <section className="testimonial-section">
-      <h2>What Our Clients Say</h2>
-      {/* Placeholder for video testimonials - Example video path used */}
+    <section className="testimonial-section" aria-labelledby="testimonial-heading">
+      <h2 id="testimonial-heading">What Our Clients Say</h2>
+      {/* Placeholder for video testimonials - Use iframe for YouTube video embedding */}
       <div className="video-testimonials">
-        <video controls>
-          <source src="https://www.youtube.com/watch?v=1WpqQfmzBGY" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/1WpqQfmzBGY"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+          aria-label="Client testimonial video"></iframe>
       </div>
       {/* Placeholder for text testimonials */}
       <div className="text-testimonials">

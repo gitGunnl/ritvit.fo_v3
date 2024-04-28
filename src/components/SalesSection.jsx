@@ -9,8 +9,8 @@ const SalesSection = ({ highlight = false }) => {
   try {
     console.log("Rendering SalesSection with highlight:", highlight);
     return (
-      <div className={`sales-section ${highlight ? 'highlight' : ''}`}>
-        <h2>Why Choose Our AI Solutions?</h2>
+      <div className={`sales-section ${highlight ? 'highlight' : ''}`} aria-labelledby="salesSectionHeading" role="region">
+        <h2 id="salesSectionHeading">Why Choose Our AI Solutions?</h2>
         <BenefitsSection />
         <TestimonialSection />
         <ThreeStepProcessSection />

@@ -3,8 +3,8 @@ import React from 'react';
 function ClientTestimonials() {
   try {
     return (
-      <section className="client-testimonials">
-        <h2>What Our Clients Say</h2>
+      <section className="client-testimonials" aria-labelledby="testimonialsHeading">
+        <h2 id="testimonialsHeading">What Our Clients Say</h2>
         <div className="testimonials-container">
           {/* Placeholder for client testimonials */}
           <p>This is a placeholder for a client testimonial. More testimonials will be added here.</p>
