@@ -25,3 +25,5 @@ function CallToAction() {
     </section>
   );
 }
+
+export default CallToAction;
