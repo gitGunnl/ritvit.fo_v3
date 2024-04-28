@@ -1,20 +1,23 @@
 import React from 'react';
 import Layout from './layout';
 import './App.css';
-import BenefitsSection from './components/BenefitsSection'; // Importing the BenefitsSection component
+import './picocssIntegration.css'; // Importing PicoCSS integration styles
+import BenefitsSection from './components/BenefitsSection';
+import ClientTestimonials from './components/ClientTestimonials';
+import SalesSection from './components/SalesSection'; // Importing the SalesSection component
 
 function App() {
   return (
     <Layout>
-      <section className="article-section">
-        {/* Placeholder for Article Section content */}
-        <p>This is where the article content will go.</p>
-      </section>
-      <BenefitsSection /> {/* Including the BenefitsSection component */}
-      <section className="sales-section">
-        {/* Placeholder for Sales Section content */}
-        <p>This is where the sales content will go.</p>
-      </section>
+      <div className="container"> {/* Applying PicoCSS container class */}
+        <section className="article-section">
+          {/* Placeholder for Article Section content */}
+          <p>This is where the article content will go.</p>
+        </section>
+        <BenefitsSection />
+        <ClientTestimonials />
+        <SalesSection /> {/* Including the SalesSection component */}
+      </div>
     </Layout>
   );
 }

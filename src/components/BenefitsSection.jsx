@@ -1,5 +1,4 @@
 import React from 'react';
-import './benefitsSection.css'; // Assuming a CSS file for custom styles
 
 function BenefitsSection() {
   return (
