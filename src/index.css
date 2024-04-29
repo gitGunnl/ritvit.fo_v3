@@ -8,7 +8,7 @@
 }
 
 /* Importing PicoCSS for global styles */
-@import url('https://unpkg.com/picocss@1/pico.min.css'); /* Correct path for PicoCSS CDN */
+@import url('https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css'); /* Correct path for PicoCSS CDN */
 
 /* Custom button styles to enhance PicoCSS defaults for the application's CTA */
 .button-cta {
