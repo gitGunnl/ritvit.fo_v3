@@ -1,9 +1,0 @@
-.sales-section {
-  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-  opacity: 1; /* Make visible by default */
-}
-.sales-section.highlight {
-  transform: scale(1.05);
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  opacity: 1; /* Keep visible when highlighted */
-}

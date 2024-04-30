@@ -1,50 +1,19 @@
-/* This file is intended for custom styles that build on top of PicoCSS. 
-   It may include overrides or additional styles specific to the ritvit.fo_v3 application. */
-
-/* Example of a custom style that might be needed alongside PicoCSS */
-.container {
-  max-width: 1200px; /* Adjust the container max-width as per design requirements */
-  margin: 0 auto; /* Center the container */
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-/* Importing PicoCSS for global styles */
-@import url('https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css'); /* Correct path for PicoCSS CDN */
-
-/* Custom button styles to enhance PicoCSS defaults for the application's CTA */
-.button-cta {
-  background-color: #007bff; /* Primary button color */
-  color: #ffffff; /* Text color for contrast */
-  padding: 0.75rem 1.5rem; /* Larger padding for better touch target */
-  border-radius: 0.5rem; /* Rounded corners for a modern look */
-  font-weight: bold; /* Make CTA text stand out */
-  transition: background-color 0.3s ease; /* Smooth background color transition on hover */
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
 }
 
-.button-cta:hover {
-  background-color: #0056b3; /* Darker shade on hover for visual feedback */
-}
-
-/* Custom styles for form elements to align with the application's design language */
-input[type="text"],
-input[type="email"],
-select {
-  border: 1px solid #ccc; /* Consistent border style */
-  padding: 0.5rem; /* Adequate padding for inputs */
-  border-radius: 0.25rem; /* Slightly rounded corners for inputs */
-}
-
-/* Error handling styles for form validation feedback */
-.error-message {
-  color: #ff0000; /* Red color for error messages */
-  font-size: 0.875rem; /* Smaller font size for error text */
-  margin-top: 0.25rem; /* Space above the error message */
-}
-
-/* Ensure accessibility by providing focus styles for interactive elements */
-a:focus,
-button:focus,
-input:focus,
-select:focus {
-  outline: 2px solid #0056b3; /* Blue outline to indicate focus */
-  outline-offset: 2px; /* Space between the outline and the element */
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
 }

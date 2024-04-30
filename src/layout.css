@@ -1,62 +1,19 @@
-/* Base layout styles */
-body, html {
-  margin: 0;
-  padding: 0;
-  font-family: 'Arial', sans-serif;
+/* Transition Button styles */
+.transition-button {
+  display: none; /* Initially hidden */
+  position: fixed; /* Ensure the button is fixed to the viewport */
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1000;
 }
 
-/* Header styles */
-header {
-  background-color: #f0f0f0;
-  padding: 1rem;
-  text-align: center;
-}
-
-/* Main content area styles */
-main {
-  display: flex;
-  flex-direction: column;
-  margin: 1rem;
-}
-
-/* Article section styles */
-.article-section {
-  margin-bottom: 2rem;
-}
-
-/* Sales section styles */
-.sales-section {
-}
-
-/* Footer styles */
-footer {
-  background-color: #f0f0f0;
-  padding: 1rem;
-  text-align: center;
-}
-
-/* Responsive layout adjustments */
-@media (min-width: 768px) {
-  main {
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .article-section, .sales-section {
-    margin: 0 1rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  header, footer {
-    padding: 2rem;
-  }
-
-  main {
-    margin: 2rem;
-  }
-
-  .article-section, .sales-section {
-    margin: 0 2rem;
-  }
+.transition-button-visible {
+  display: block; /* Show the button when it should be visible */
 }
